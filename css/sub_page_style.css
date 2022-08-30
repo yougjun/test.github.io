@@ -1,0 +1,95 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul,ol,li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.scrap {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    width: calc(100%);
+    box-sizing: border-box;
+    background: linear-gradient(45deg, #dbdbe6, #dcf3f3);
+}
+
+.scrap h2 {
+    font-weight: normal;
+    font-size: 24px;
+    font-family: "arial";
+    color: #111;
+    letter-spacing: 1px;
+    position: relative;
+    text-align: center;
+    top: 70px;
+}
+
+.scrap .content p {
+    margin: 0 0 15px 0;
+    position: relative;
+    text-align: center;
+    top: 160px;
+}
+
+.back-top {
+    color: rgb(232, 230, 227);
+}
+
+.back-top {
+    display: none;
+    z-index: 1010;
+    width: 32px;
+    height: 32px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 0;
+}
+
+.back-top::before {
+    background-color: rgb(17, 110, 169);
+}
+
+.back-top:before {
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#33a4eb;
+    opacity:.5;
+    transition:opacity .17s ease
+}
+
+.back-top:after {
+    content:'^';
+    position:relative;
+    font-family: "roboto";
+    font-size: large;
+    font-weight:400;
+    opacity: 0.8;
+    transition:opacity .17s ease}
+
+.back-top:hover:before,
+.back-top:hover:after,
+.nav-active .back-top:after,
+.nav-active .back-top:before{opacity:1}

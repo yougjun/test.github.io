@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel = "stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.come/c47106c6a7.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="javaScript/navigate.js"></script>
+    <title>Project 1</title>
+</head>
+<body>
+    <div class="wrap">
+        <h1>My <span>PORTFOLIO</span></h1>
+
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="page/1.html">News</a>
+            <a href="page/2.html">About</a>
+        </div>
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" onclick="location.href='page/1.html'">
+                <div class="inner">
+                    <div class="con">
+                        <img src="img/service.png">
+                        <h2> Web Scrapping with Python and bs4</h2>
+                        <p>Introduction of web scrapping using python and bs4</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" onclick="location.href='page/2.html'">
+                <div class="inner">
+                    <div class="con">
+                        <img src="">
+                        <a href="page/1.html">
+                            <h2>Create 3D models from photo</h2>
+                            <p>Introduction of extraction faces from photo and convert to 3D</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="inner">
+                    <div class="con">
+                        <img src="">
+                        <h2>Optical Character Recognition</h2>
+                        <p>Introduction of basic method of OCR using python and machine learning utility Tesseract</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="inner">
+                    <div class="con">
+                        <img src="">
+                        <h2> 4</h2>
+                        <p>No Content</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="inner">
+                    <div class="con">
+                        <img src="">
+                        <h2> 5</h2>
+                        <p>No Content</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script>
+        var swiper = new Swiper(".wrap", {
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          slidesPerView: "auto",
+          spaceBetween: 50,
+          loop: true,
+          centeredSlides: true,
+          speed: 1000,
+          direction: "horizontal",
+          effect: "coverflow",
+          coverflowEffect: {
+              rotate: 50,
+              stretch: -100,
+              depth: 400,
+              modifier: 1,
+              slideShadows: false,
+          }
+        });
+      </script>
+</body>
+</html>
